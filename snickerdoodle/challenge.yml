@@ -1,0 +1,34 @@
+name: "snickerdoodle"
+author: "Solitude"
+category: web
+description: I love snickerdoodles
+value: 10
+type: dynamic # standard if no extra
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+
+image: null
+host: null
+
+connection_info: https://snickerdoodle.nypinfosec.net
+
+attempts: 5 # remove for unlimited attempts
+
+flags:
+  - "NYP{1_l0v3_sn1ck3rd00dl3s!}"
+
+tags:
+  - easy
+  - web
+
+# Provide paths to files from the same directory that this file is in
+
+hints:
+
+requirements:
+
+state: hidden # visible when wave released
+
+version: "0.1"

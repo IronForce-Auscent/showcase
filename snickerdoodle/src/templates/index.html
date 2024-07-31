@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<h1 align="center">Choose a cookie flavour</h1>
+<form action="{{ url_for('cookie_picker') }}" method="POST">
+    <!-- 
+        I heard there's some... special cookies that the admins love to eat. Maybe you can check them out? 
+        I love snickerdoodle cookies by the way, do you love them too?
+    -->
+    <textarea name="cookie" id="cookie" class="form-control" placeholder="Share your favourite cookie! E.g. chocolate chip, snickerdoodle..."></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<ul class="list-group list-group-flush" id="notes">
+    {{ msg }}
+</ul>
+{% endblock %}
